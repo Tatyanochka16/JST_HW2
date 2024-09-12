@@ -1,3 +1,4 @@
+
 const func = () => {
     const sum = (a, b) => a + b;
     let x = 10;
@@ -12,3 +13,4 @@ const func = () => {
     };
     
     func();
+    

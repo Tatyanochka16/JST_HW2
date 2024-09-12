@@ -6,22 +6,7 @@ export default [
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   {
-    "env": { // предоставляет предопределенные глобальные переменные
-        "browser": true,
-        "es2021": true,
-        "node": true
-    },
-    "extends": [
-      "standard",
-      "prettier"
-    ], // рекомендуемый набор правил
-    "parserOptions": {
-        // версия синтаксиса ECMAScript: 5 (по умолчанию), 6 (или 2015), ..., 12 (2021), 13 (2022)
-        "ecmaVersion": "latest",
-        // script (значение по умолчанию) или module (если используются модули ECMAScript)
-        "sourceType": "module"
-    },
-    "rules": {
+    rules: {
         "constructor-super": "error", // проверка вызова super() в конструкторе
         "for-direction": "error", // проверка цикла for на конечное число итераций
         "getter-return": "error", // требовать return в getter
@@ -83,7 +68,7 @@ export default [
         "require-yield": "error", // требовать yield для функции-генератора
         "use-isnan": "error", // требовать isNaN() для проверки NaN
         "valid-typeof": "error" // требовать для typeof допустимых строк "string", "undefined", "object"
-    }
-        // можно переопределять recommended правила и добавлять правила, которых нет в recommended
-  }
+    
+    },
+}
 ];
